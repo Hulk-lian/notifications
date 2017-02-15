@@ -33,6 +33,7 @@ public class Call_broadcastReceiver extends BroadcastReceiver {
 
                 //Añadir el objeto PendingItem a la notificacion
                 builder.setContentIntent(pendingIntent);
+                builder.setAutoCancel(true);//para que se cierre
 
                 //Añadir la nitificacion al notification manager
                 NotificationManager notificationManager= (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
